@@ -1,0 +1,31 @@
+/*Open-source Google fonts on a local storage*/
+
+@font-face {
+    font-family: 'Lato Regular';
+    src: url("fonts/Lato-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Lato LightItalic';
+    src: url("fonts/Lato-LightItalic.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: black;
+}
+
