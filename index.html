@@ -1,0 +1,33 @@
+<!--Simple (is it simple? No idea) validation form using JavaScript Constraint Validation API
+Theory source: https://developer.mozilla.org/ru/docs/Learn/Forms/Form_validation
+Design layout and UI Kit: https://www.figma.com/file/2soJlhz4HvYWESbZZW6bUJ/Validation-form?node-id=2%3A2
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Study project by Anastasia Pisnova">
+    <title>Validation form</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Please authorize in our service</h1>
+        <img src="images/bg.jpg" class="header__image" alt="background">
+    </div>
+    <div class="validation-form">
+        <form name="form" novalidate>
+            <label>EMAIL</label>
+            <input type="email" class="validation-form__email" name="email" id="email" required minlength="8">
+            <span class="validation-form__message-error" aria-live="polite"></span>
+            <label>PASSWORD</label>
+            <input type="password" class="validation-form__password" name="password" id="password">
+            <button name="button" class="validation-form__button">SIGN IN</button>
+        </form>
+
+    </div>
+</body>
+</html>
