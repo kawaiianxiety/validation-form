@@ -14,23 +14,26 @@ Design layout and UI Kit: https://www.figma.com/file/2soJlhz4HvYWESbZZW6bUJ/Vali
     <script src="script.js"></script>
 </head>
 <body>
-    <div class="header">
-        <h1>Please authorize in our service</h1>
-        <img src="images/bg.jpg" class="header__image" alt="background">
+    <div class="main-content-flexbox">
+        <div class="header">
+            <h1 class="header__text">Please authorize in our service</h1>
+        </div>
+        <div class="validation-form">
+            <form name="form" novalidate>
+                <label class="form__label">EMAIL</label>
+                <label for="email">
+                    <input type="email" class="validation-form__input" name="email" id="email" required minlength="8">
+                </label>
+                <span class="validation-form__message-error" aria-live="polite"></span>
+                <label class="form__label">PASSWORD</label>
+                <label for="password">
+                    <input type="password" class="validation-form__input" name="password" id="password">
+                </label>
+                <span class="validation-form__message-error" aria-live="polite"></span>
+                <button name="button" class="validation-form__button">SIGN IN</button>
+            </form>
+        </div>
     </div>
-    <div class="validation-form">
-        <form name="form" novalidate>
-            <label>EMAIL</label>
-            <label for="email">
-                <input type="email" class="validation-form__email" name="email" id="email" required minlength="8">
-            </label>
-            <span class="validation-form__message-error" aria-live="polite"></span>
-            <label>PASSWORD</label>
-            <label for="password">
-                <input type="password" class="validation-form__password" name="password" id="password">
-            </label>
-            <button name="button" class="validation-form__button">SIGN IN</button>
-        </form>
-    </div>
+
 </body>
 </html>
