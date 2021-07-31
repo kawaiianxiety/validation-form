@@ -82,6 +82,7 @@ form {
     font-size: 18px;
     font-style: normal;
     padding-left: 5%;
+    text-transform: uppercase;
 }
 
 .validation-form__input {
@@ -92,6 +93,18 @@ form {
     border-radius: 100px;
     margin-bottom: 5%;
     margin-top: 2%;
+}
+
+.validation-form__input :invalid {
+    border-color: #FF0000;
+}
+
+.validation-form__message-error {
+    font-size: 18px;
+    font-family: "Lato Light", sans-serif;
+    color: #FF0000;
+    font-style: italic;
+    padding-left: 35%;
 }
 
 .validation-form__button {
