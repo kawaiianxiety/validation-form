@@ -16,14 +16,14 @@ email.addEventListener('input', function (event) {
 })
 
 form.addEventListener('submit', function (event) {
-    if(!email.validity.valid) && (!password.validity.valid) {
+    if(!email.validity.valid && !password.validity.valid) {
         showError()
         event.preventDefault()
     }
 })
 
 function showError() {
-    if(email.validity.valueMissing) || (password.validity.valueMissing) {
+    if(email.validity.valueMissing || password.validity.valueMissing) {
         emailError.textContent = 'Please enter an email'
 
     }
