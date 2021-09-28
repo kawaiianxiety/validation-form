@@ -22,13 +22,13 @@ Design layout and UI Kit: https://www.figma.com/file/2soJlhz4HvYWESbZZW6bUJ/Vali
             <form name="form" novalidate>
                 <label for="email">
                     <span class="form__label">Email</span>
+                    <span class="validation-form__message-error" aria-live="polite">Invalid value</span>
                     <input type="email" class="validation-form__input" name="email" id="email" required minlength="8">
-                    <span class="validation-form__message-error" aria-live="polite"></span>
                 </label>
                 <label for="password">
                     <span class="form__label">Password</span>
+                    <span class="validation-form__message-error" aria-live="polite">Invalid value</span>
                     <input type="password" class="validation-form__input" name="password" id="password" required minlength="8">
-                    <span class="validation-form__message-error" aria-live="polite"></span>
                 </label>
                 <button name="button" class="validation-form__button">SIGN IN</button>
             </form>
